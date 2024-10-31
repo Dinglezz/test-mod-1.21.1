@@ -1,5 +1,6 @@
 package net.dinglezz.testmod;
 
+import net.dinglezz.testmod.block.ModBlocks;
 import net.dinglezz.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
