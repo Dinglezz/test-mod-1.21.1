@@ -6,13 +6,14 @@
 
   "block.testmod.pink_garnet_block": "Block of Pink Garnet",
   "block.testmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.testmod.magic_block": "Magic Block",
 
   "block.testmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.testmod.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
 
   "itemgroup.testmod.pink_garnet_stuff": "Pink Garnet Stuff",
 
-  "tooltip_testmod_magic_block.tooltip": "§9This block is discarded.§rr",
+  "tooltip_testmod_magic_block.tooltip": "§6Try throwing a diamond on top.§r",
   "tooltip_testmod_chisel.tooltip": "§6Carve amazing stone bricks.§r",
   "tooltip_testmod_starlight_ashes.tooltip": "§6A great consumable fuel source!§r",
   "tooltip_testmod_starlight_ashes.tooltip2": "§6Might contain ashes§r.",
