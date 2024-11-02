@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "testmod:pink_garnet_block"
+      "item": "testmod:pink_garnet"
     },
     "e": {
-      "item": "minecraft:stick"
+      "item": "minecraft:blaze_rod"
     }
   },
   "pattern": [
-    "   ",
     " # ",
-    " e "
+    "#e#",
+    " # "
   ],
   "result": {
     "count": 1,
-    "id": "testmod:chisel"
+    "id": "testmod:starlight_ashes"
   }
 }
