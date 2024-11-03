@@ -29,6 +29,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+
+                        entries.add(ModBlocks.PINK_GARNET_BUTTON);
+                        entries.add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+                        entries.add(ModBlocks.PINK_GARNET_DOOR);
+                        entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
                     }).build());
 
 
