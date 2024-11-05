@@ -1,6 +1,7 @@
 package net.dinglezz.testmod;
 
 import net.dinglezz.testmod.block.ModBlocks;
+import net.dinglezz.testmod.component.ModDataComponentTypes;
 import net.dinglezz.testmod.item.ModItemGroups;
 import net.dinglezz.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,8 @@ public class TestMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 1600);
 	}

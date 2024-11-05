@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -62,5 +63,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.BLAZE_ROD)
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_ASHES)
+                .pattern(" B ")
+                .pattern("BPB")
+                .pattern(" B ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('B', Items.GLOWSTONE)
+                .criterion(hasItem(Items.GLOWSTONE), conditionsFromItem(Items.GLOWSTONE))
+                .offerTo(recipeExporter);
+
     }
 }

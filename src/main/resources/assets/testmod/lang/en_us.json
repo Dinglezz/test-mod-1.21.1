@@ -16,6 +16,8 @@
   "block.testmod.pink_garnet_door": "Pink Garnet Door",
   "block.testmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
+  "block.testmod.pink_garnet_lamp": "Pink Garnet Lamp",
+
   "itemgroup.testmod.pink_garnet_stuff": "Pink Garnet Stuff",
 
   "tooltip_testmod_magic_block.tooltip": "§6Try throwing a diamond on top.§r",
