@@ -37,6 +37,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
           createDoorRecipe(ModBlocks.PINK_GARNET_DOOR, Ingredient.ofItems(ModItems.PINK_GARNET)).criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET)).offerTo(recipeExporter);
           createTrapdoorRecipe(ModBlocks.PINK_GARNET_TRAPDOOR, Ingredient.ofItems(ModItems.PINK_GARNET)).criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET)).offerTo(recipeExporter);
 
+
           // Normals
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CHISEL)
                 .pattern("   ")
@@ -108,6 +109,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .input('P', ModItems.PINK_GARNET)
                 .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HAMMER)
+                .pattern("PPP")
+                .pattern("PSP")
+                .pattern(" S ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        // Armor
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HELMET)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                .input('P', ModItems.PINK_GARNET)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_CHESTPLATE)
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModItems.PINK_GARNET)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_LEGGINGS)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PINK_GARNET)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_BOOTS)
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PINK_GARNET)
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter);
     }
