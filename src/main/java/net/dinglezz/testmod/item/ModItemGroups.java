@@ -36,6 +36,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
 
+                        entries.add(ModItems.DINGLE_SMITHING_TEMPLATE);
+
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
 

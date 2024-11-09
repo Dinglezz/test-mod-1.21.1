@@ -17,6 +17,7 @@
   "item.testmod.pink_garnet_boots": "Pink Garnet Boots",
 
   "item.testmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+  "item.testmod.dingle_armor_trim_smithing_template": "Dingle Smithing Template",
 
   "block.testmod.pink_garnet_block": "Block of Pink Garnet",
   "block.testmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -38,5 +39,8 @@
   "tooltip_testmod_chisel.tooltip": "§6Carve amazing stone bricks.§r",
   "tooltip_testmod_starlight_ashes.tooltip": "§6A great consumable fuel source!§r",
   "tooltip_testmod_starlight_ashes.tooltip2": "§6Might contain ashes§r.",
-  "tooltip_testmod_pink_garnet.tooltip": "§6What a fine ore!§r."
+  "tooltip_testmod_pink_garnet.tooltip": "§6What a fine ore!§r.",
+
+  "trim_material.testmod.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.testmod.dingle": "Dingle Armor Pattern"
 }

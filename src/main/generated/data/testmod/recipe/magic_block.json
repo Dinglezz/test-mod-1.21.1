@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "testmod:pink_garnet"
+    },
+    "R": {
+      "item": "testmod:raw_pink_garnet_block"
+    }
+  },
+  "pattern": [
+    "PRP",
+    "RPR",
+    "PRP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod:magic_block"
+  }
+}
