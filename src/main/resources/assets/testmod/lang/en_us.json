@@ -44,6 +44,13 @@
 
   "effect.testmod.slimey": "Slimey",
 
+  "painting.testmod.world.title": "World",
+  "painting.testmod.world.author": "NanoAttack",
+  "painting.testmod.shrimp.title": "Shrimp",
+  "painting.testmod.shrimp.author": "NanoAttack",
+  "painting.testmod.saw_them.title": "Saw Them",
+  "painting.testmod.saw_them.author": "NanoAttack",
+
   "itemgroup.testmod.pink_garnet_stuff": "Pink Garnet Stuff",
 
   "trim_material.testmod.pink_garnet": "Pink Garnet Material",
