@@ -4,6 +4,7 @@ import net.dinglezz.testmod.TestMod;
 import net.dinglezz.testmod.item.custom.ChiselItem;
 import net.dinglezz.testmod.item.custom.HammerItem;
 import net.dinglezz.testmod.item.custom.ModArmorItem;
+import net.dinglezz.testmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -79,6 +80,12 @@ public class ModItems {
 
     public static final Item DINGLE_SMITHING_TEMPLATE = registerItem("dingle_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(TestMod.MOD_ID, "dingle"), FeatureFlags.VANILLA));
+
+    public static final Item DINGLE_BOW = registerItem("dingle_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);

@@ -1,0 +1,6 @@
+{
+  "parent": "testmod:item/dingle_bow",
+  "textures": {
+    "layer0": "testmod:item/dingle_bow_pulling_2"
+  }
+}

@@ -38,6 +38,9 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DINGLE_SMITHING_TEMPLATE);
 
+                        entries.add(ModItems.DINGLE_BOW);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
 
