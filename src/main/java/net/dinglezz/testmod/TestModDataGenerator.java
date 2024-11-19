@@ -4,6 +4,8 @@ import net.dinglezz.testmod.datagen.*;
 import net.dinglezz.testmod.enchantment.ModEnchantmentEffects;
 import net.dinglezz.testmod.trim.ModTrimMaterials;
 import net.dinglezz.testmod.trim.ModTrimPatterns;
+import net.dinglezz.testmod.world.ModConfiguredFeatures;
+import net.dinglezz.testmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -20,6 +22,7 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
+		pack.addProvider(ModWorldGenerator::new);
 
 	}
 
@@ -28,5 +31,8 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantmentEffects::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }
