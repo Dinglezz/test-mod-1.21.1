@@ -3,6 +3,8 @@ package net.dinglezz.testmod;
 import net.dinglezz.testmod.block.ModBlocks;
 import net.dinglezz.testmod.component.ModDataComponentTypes;
 import net.dinglezz.testmod.effect.ModEffects;
+import net.dinglezz.testmod.enchantment.ModEnchantmentEffects;
+import net.dinglezz.testmod.enchantment.ModEnchantments;
 import net.dinglezz.testmod.item.ModItemGroups;
 import net.dinglezz.testmod.item.ModItems;
 import net.dinglezz.testmod.potion.ModPotions;
@@ -11,11 +13,14 @@ import net.dinglezz.testmod.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
@@ -37,6 +42,7 @@ public class TestMod implements ModInitializer {
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModEnchantments.registerEnchantmentEffects();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 1600);
 

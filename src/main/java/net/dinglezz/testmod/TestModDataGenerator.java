@@ -1,6 +1,7 @@
 package net.dinglezz.testmod;
 
 import net.dinglezz.testmod.datagen.*;
+import net.dinglezz.testmod.enchantment.ModEnchantmentEffects;
 import net.dinglezz.testmod.trim.ModTrimMaterials;
 import net.dinglezz.testmod.trim.ModTrimPatterns;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -26,5 +27,6 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantmentEffects::bootstrap);
 	}
 }
