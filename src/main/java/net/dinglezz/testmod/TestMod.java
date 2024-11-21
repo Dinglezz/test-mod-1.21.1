@@ -10,6 +10,7 @@ import net.dinglezz.testmod.item.ModItems;
 import net.dinglezz.testmod.potion.ModPotions;
 import net.dinglezz.testmod.sound.ModSounds;
 import net.dinglezz.testmod.util.HammerUsageEvent;
+import net.dinglezz.testmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -46,6 +47,8 @@ public class TestMod implements ModInitializer {
 		ModEnchantments.registerEnchantmentEffects();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 1600);
+
+		ModWorldGeneration.generateModWorldGen();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 

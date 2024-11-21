@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"net.dinglezz.testmod.TestModClient"
+		],
+		"terrablender": [
+			"net.dinglezz.testmod.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [
