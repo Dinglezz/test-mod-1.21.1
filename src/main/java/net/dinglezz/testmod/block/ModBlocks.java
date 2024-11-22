@@ -49,6 +49,19 @@ public class ModBlocks {
             new PinkGarnetLampBlock(AbstractBlock.Settings.create()
                     .strength(1f).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0).requiresTool()));
 
+
+
+    public static final Block DEEPSLATE_GRASS = registerBlock("deepslate_grass",
+            new GrassBlock(AbstractBlock.Settings.create().strength(3.0F, 6.0F)
+                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block GRASIN = registerBlock("grasin",
+            new LeavesBlock(AbstractBlock.Settings.create().strength(3.0F, 6.0F).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block DEEPSLATE_LOG = registerBlock("deepslate_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(4f)));
+    public static final Block DEEPSLATE_WOOD = registerBlock("deepslate_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(4f)));
+
     //public static final Block
 
     private static Block registerBlock(String name, Block block) {

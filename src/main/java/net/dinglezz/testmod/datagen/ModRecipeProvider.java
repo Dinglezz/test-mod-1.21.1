@@ -41,6 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
           createDoorRecipe(ModBlocks.PINK_GARNET_DOOR, Ingredient.ofItems(ModItems.PINK_GARNET)).criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET)).offerTo(recipeExporter);
           createTrapdoorRecipe(ModBlocks.PINK_GARNET_TRAPDOOR, Ingredient.ofItems(ModItems.PINK_GARNET)).criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET)).offerTo(recipeExporter);
 
+          offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.DEEPSLATE_WOOD, ModBlocks.DEEPSLATE_LOG);
 
           // Normals
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CHISEL)

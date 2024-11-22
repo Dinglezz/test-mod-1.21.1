@@ -7,20 +7,21 @@ import net.minecraft.block.Blocks;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
 public class ModMaterialRules {
-    private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
-    private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
-    private static final MaterialRules.MaterialRule RUBY = makeStateRule(ModBlocks.PINK_GARNET_BLOCK);
-    private static final MaterialRules.MaterialRule RAW_RUBY = makeStateRule(ModBlocks.RAW_PINK_GARNET_BLOCK);
+    private static final MaterialRules.MaterialRule DEEPSLATE = makeStateRule(Blocks.DEEPSLATE);
+    private static final MaterialRules.MaterialRule DEEPSLATE_GRASS = makeStateRule(ModBlocks.DEEPSLATE_GRASS);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
 
-        MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
+        MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, DEEPSLATE_GRASS), DEEPSLATE);
 
         return MaterialRules.sequence(
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, RUBY)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, RAW_RUBY)),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, DEEPSLATE_GRASS)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, DEEPSLATE)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, DEEPSLATE),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30, DEEPSLATE),
+
 
                 // Default to a grass and dirt surface
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)

@@ -32,6 +32,9 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+    blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_LOG).log(ModBlocks.DEEPSLATE_LOG).wood(ModBlocks.DEEPSLATE_WOOD);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRASIN);
     }
 
     @Override

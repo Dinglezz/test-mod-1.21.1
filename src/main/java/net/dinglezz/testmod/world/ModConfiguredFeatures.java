@@ -9,15 +9,15 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registryKey("pink_garnet_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPWOOD_KEY = registryKey("deepwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -28,6 +28,10 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PINK_GARNET_ORE.getDefaultState()));
 
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 12));
+
+        //register(context, DEEPWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+         //       BlockStateProvider.of(ModBlocks.)
+      //  ));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {

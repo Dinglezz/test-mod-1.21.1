@@ -2,7 +2,6 @@ package net.dinglezz.testmod.item;
 
 import net.dinglezz.testmod.TestMod;
 import net.dinglezz.testmod.block.ModBlocks;
-import net.dinglezz.testmod.potion.ModPotions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -57,6 +56,17 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
 
+                    }).build());
+
+    public static final ItemGroup ABOVE_DEEPSLATE = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TestMod.MOD_ID, "above_deepslate"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DEEPSLATE_GRASS))
+                    .displayName(Text.translatable("itemgroup.testmod.above_deepslate"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.DEEPSLATE_GRASS);
+                        entries.add(ModBlocks.DEEPSLATE_LOG);
+                        entries.add(ModBlocks.DEEPSLATE_WOOD);
+                        entries.add(ModBlocks.GRASIN);
                     }).build());
 
 

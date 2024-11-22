@@ -42,6 +42,11 @@
 
   "block.testmod.pink_garnet_lamp": "Pink Garnet Lamp",
 
+  "block.testmod.deepslate_grass": "Deepslate Grass",
+  "block.testmod.deepslate_log": "Deepslate Log",
+  "block.testmod.deepslate_wood": "Deepslate Wood",
+  "block.testmod.grasin": "Grasin",
+
   "effect.testmod.slimey": "Slimey",
 
   "painting.testmod.world.title": "World",
@@ -54,6 +59,7 @@
   "enchantment.testmod.lightning_striker": "Lightning Striker",
 
   "itemgroup.testmod.pink_garnet_stuff": "Pink Garnet Stuff",
+  "itemgroup.testmod.above_deepslate": "Above Deepslate",
 
   "trim_material.testmod.pink_garnet": "Pink Garnet Material",
   "trim_pattern.testmod.dingle": "Dingle Armor Pattern",

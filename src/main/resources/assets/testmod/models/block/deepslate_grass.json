@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "testmod:block/grasin",
+    "side": "testmod:block/deepslate_grass",
+    "bottom": "minecraft:block/deepslate"
+  }
+}

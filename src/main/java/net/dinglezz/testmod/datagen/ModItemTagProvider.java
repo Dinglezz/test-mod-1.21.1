@@ -1,5 +1,6 @@
 package net.dinglezz.testmod.datagen;
 
+import net.dinglezz.testmod.block.ModBlocks;
 import net.dinglezz.testmod.item.ModItems;
 import net.dinglezz.testmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -58,5 +59,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.DINGLE_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEEPSLATE_LOG.asItem())
+                .add(ModBlocks.DEEPSLATE_WOOD.asItem());
     }
 }

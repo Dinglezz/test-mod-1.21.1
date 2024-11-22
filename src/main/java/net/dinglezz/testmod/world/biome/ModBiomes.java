@@ -18,6 +18,8 @@ import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
+import org.apache.commons.codec.binary.Hex;
+import org.w3c.dom.css.RGBColor;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> TEST_BIOME =
@@ -36,9 +38,10 @@ public class ModBiomes {
         DefaultBiomeFeatures.addFrozenTopLayer(builder);
     }
 
-    public static Biome testBiome(Registerable<Biome> context) {
+    public static Biome testBiome(Registerable<Biome> context){
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ARMADILLO, 2, 3, 5));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ZOMBIE_HORSE, 2, 5, 10));
 
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 5, 4, 4));
 
@@ -50,8 +53,6 @@ public class ModBiomes {
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
         globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
@@ -68,14 +69,13 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
+                        .waterColor(0xbf1b26)
                         .waterFogColor(0xbf1b26)
                         .skyColor(0x30c918)
                         .grassColor(0x7f03fc)
                         .foliageColor(0xd203fc)
-                        .fogColor(0x22a1e6)
-                        .moodSound(BiomeMoodSound.CAVE)
-                        .music(MusicType.createIngameMusic(RegistryEntry.of(ModSounds.BAR_BRAWL))).build())
+                        .fogColor(0xd203fc)
+                        .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
 }
