@@ -26,7 +26,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_DOOR)
                 .add(ModBlocks.PINK_GARNET_TRAPDOOR)
                 .add(ModBlocks.PINK_GARNET_LAMP)
-                .add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+                .add(ModBlocks.PINK_GARNET_PRESSURE_PLATE)
+
+                .add(ModBlocks.DEEPSlATE_GRASS);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.DEEP_LOG)
+                .add(ModBlocks.DEEP_WOOD);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.PINK_GARNET_ORE);
@@ -38,5 +44,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.IS_DEEP_PLANTABLE)
+                .add(ModBlocks.DEEPSlATE_GRASS);
     }
 }

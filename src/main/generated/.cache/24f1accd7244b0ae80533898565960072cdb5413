@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-22T16:40:12.094323	Test Mod/Model Definitions
+// 1.21.1	2024-11-23T23:10:01.865096	Test Mod/Model Definitions
 7799bd7ce55efdfc8149f408e69357767f79492e assets/testmod/blockstates/deepslate_pink_garnet_ore.json
 8a9ffa182874bc54221c5707b7cb4cb966970c50 assets/testmod/models/item/pink_garnet_leggings_gold_trim.json
 1b5aecb3df75cb3533f35a7ed8cbef1f65fcf88c assets/testmod/models/block/pink_garnet_trapdoor_open.json
@@ -21,8 +21,8 @@ db0e5c24d2bc1df5d48f405aecd65a80b750c19c assets/testmod/models/item/pink_garnet_
 e7a8c355f5a53a1e5ee752fedc7ae761dd86a67c assets/testmod/models/item/pink_garnet_helmet.json
 0f81de7a916a9322fa5f2876c958c46e934000d4 assets/testmod/models/item/pink_garnet_helmet_gold_trim.json
 37cd13c0b2148b11b60f690e7add2e5855428605 assets/testmod/models/item/pink_garnet_leggings_emerald_trim.json
-1244b33beda3094858e57b9fa461d6781b30ed59 assets/testmod/models/item/pink_garnet_helmet_redstone_trim.json
 7c04762a05a31f5f7becf888bb7247b59e7a8118 assets/testmod/models/block/pink_garnet_door_top_right.json
+1244b33beda3094858e57b9fa461d6781b30ed59 assets/testmod/models/item/pink_garnet_helmet_redstone_trim.json
 9182d0839494cd0c85492c54142ab7cf4a4bf700 assets/testmod/models/item/pink_garnet_sword.json
 6549ec536423ad925f96402be341211e537337d5 assets/testmod/models/item/pink_garnet.json
 4eae21f8685e248a70a01b2ff687804690031e24 assets/testmod/blockstates/pink_garnet_block.json
@@ -81,8 +81,8 @@ c8e3fd5af1015d0c3616cc7fda6eedd5fff73baa assets/testmod/models/item/deep_sapling
 68b85f4f57396c32a32ac6f24ae6740eecb728c8 assets/testmod/models/item/pink_garnet_leggings_diamond_trim.json
 b3f93cfd121410462227fa923a4b4f0cd89553e8 assets/testmod/blockstates/pink_garnet_lamp.json
 fd0781a9496b91a6484ae5cf0ea0736260583143 assets/testmod/models/block/pink_garnet_door_bottom_right.json
-1f1d55063d90fea0e914764a5acf34f8745dd9ed assets/testmod/models/item/pink_garnet_helmet_copper_trim.json
 7c7231afbfb35344b68b02ef12f82d6bb594973a assets/testmod/models/item/pink_garnet_axe.json
+1f1d55063d90fea0e914764a5acf34f8745dd9ed assets/testmod/models/item/pink_garnet_helmet_copper_trim.json
 30aa3e902952887784b0ddeeaaf6f51f181c5867 assets/testmod/models/item/pink_garnet_ore.json
 9a06e54e22cd98054d399605ca2038951a99fa94 assets/testmod/models/block/magic_block.json
 1f1b0641218eb36300c88198b3b28e3fb8b2b837 assets/testmod/models/block/pink_garnet_door_bottom_left.json

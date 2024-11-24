@@ -1,5 +1,6 @@
 package net.dinglezz.testmod.block;
 
+import net.dinglezz.testmod.block.custom.DeepSapling;
 import net.dinglezz.testmod.block.custom.MagicBlock;
 import net.dinglezz.testmod.block.custom.PinkGarnetLampBlock;
 import net.dinglezz.testmod.sound.ModSounds;
@@ -60,7 +61,7 @@ public class ModBlocks {
     public static final Block GRASIN = registerBlock("grasin",
             new Block(AbstractBlock.Settings.create().strength(2.0F, 5.0F).sounds(BlockSoundGroup.WART_BLOCK).requiresTool()));
     public static final Block DEEP_SAPLING = registerBlock("deep_sapling",
-        new SaplingBlock(ModSaplingGenerators.DEEP, AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
+        new DeepSapling(ModSaplingGenerators.DEEP, AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
                 .pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.NYLIUM).nonOpaque()));
 
     public static final Block DEEP_LOG = registerBlock("deep_log",
