@@ -60,13 +60,14 @@ public class ModItemGroups {
 
     public static final ItemGroup ABOVE_DEEPSLATE = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TestMod.MOD_ID, "above_deepslate"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DEEPSLATE_GRASS))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DEEPSlATE_GRASS))
                     .displayName(Text.translatable("itemgroup.testmod.above_deepslate"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.DEEPSLATE_GRASS);
-                        entries.add(ModBlocks.DEEPSLATE_LOG);
-                        entries.add(ModBlocks.DEEPSLATE_WOOD);
+                        entries.add(ModBlocks.DEEPSlATE_GRASS);
+                        entries.add(ModBlocks.DEEP_LOG);
+                        entries.add(ModBlocks.DEEP_WOOD);
                         entries.add(ModBlocks.GRASIN);
+                        entries.add(ModBlocks.DEEP_SAPLING  );
                     }).build());
 
 

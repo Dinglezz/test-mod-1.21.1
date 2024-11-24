@@ -8,7 +8,7 @@ import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
 public class ModMaterialRules {
     private static final MaterialRules.MaterialRule DEEPSLATE = makeStateRule(Blocks.DEEPSLATE);
-    private static final MaterialRules.MaterialRule DEEPSLATE_GRASS = makeStateRule(ModBlocks.DEEPSLATE_GRASS);
+    private static final MaterialRules.MaterialRule DEEPSLATE_GRASS = makeStateRule(ModBlocks.DEEPSlATE_GRASS);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
@@ -21,6 +21,8 @@ public class ModMaterialRules {
                         MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, DEEPSLATE)),
                         MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, DEEPSLATE),
                         MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30, DEEPSLATE),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, DEEPSLATE),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH, DEEPSLATE),
 
 
                 // Default to a grass and dirt surface

@@ -3,9 +3,11 @@ package net.dinglezz.testmod.block;
 import net.dinglezz.testmod.block.custom.MagicBlock;
 import net.dinglezz.testmod.block.custom.PinkGarnetLampBlock;
 import net.dinglezz.testmod.sound.ModSounds;
+import net.dinglezz.testmod.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.dinglezz.testmod.TestMod;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +16,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 
 public class ModBlocks {
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
@@ -51,16 +54,19 @@ public class ModBlocks {
 
 
 
-    public static final Block DEEPSLATE_GRASS = registerBlock("deepslate_grass",
+    public static final Block DEEPSlATE_GRASS = registerBlock("deepslate_grass",
             new GrassBlock(AbstractBlock.Settings.create().strength(3.0F, 6.0F)
                     .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block GRASIN = registerBlock("grasin",
-            new LeavesBlock(AbstractBlock.Settings.create().strength(3.0F, 6.0F).sounds(BlockSoundGroup.NYLIUM)));
+            new Block(AbstractBlock.Settings.create().strength(2.0F, 5.0F).sounds(BlockSoundGroup.WART_BLOCK).requiresTool()));
+    public static final Block DEEP_SAPLING = registerBlock("deep_sapling",
+        new SaplingBlock(ModSaplingGenerators.DEEP, AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
+                .pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.NYLIUM).nonOpaque()));
 
-    public static final Block DEEPSLATE_LOG = registerBlock("deepslate_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(4f)));
-    public static final Block DEEPSLATE_WOOD = registerBlock("deepslate_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(4f)));
+    public static final Block DEEP_LOG = registerBlock("deep_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LOG).strength(4f)));
+    public static final Block DEEP_WOOD = registerBlock("deep_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_WOOD).strength(4f)));
 
     //public static final Block
 

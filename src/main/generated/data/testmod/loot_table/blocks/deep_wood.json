@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "testmod:deepslate_wood"
+          "name": "testmod:deep_wood"
         }
       ],
       "rolls": 1.0

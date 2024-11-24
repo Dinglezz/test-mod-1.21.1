@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "testmod:deepslate_log"
+      "item": "testmod:deep_log"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "testmod:deepslate_wood"
+    "id": "testmod:deep_wood"
   }
 }

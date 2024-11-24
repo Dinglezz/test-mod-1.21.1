@@ -43,9 +43,10 @@
   "block.testmod.pink_garnet_lamp": "Pink Garnet Lamp",
 
   "block.testmod.deepslate_grass": "Deepslate Grass",
-  "block.testmod.deepslate_log": "Deepslate Log",
-  "block.testmod.deepslate_wood": "Deepslate Wood",
+  "block.testmod.deep_log": "Deep Log",
+  "block.testmod.deep_wood": "Deep Wood",
   "block.testmod.grasin": "Grasin",
+  "block.testmod.deep_sapling": "Deep Sapling",
 
   "effect.testmod.slimey": "Slimey",
 

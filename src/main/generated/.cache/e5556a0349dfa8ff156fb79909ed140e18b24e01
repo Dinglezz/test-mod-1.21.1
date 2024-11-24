@@ -1,14 +1,15 @@
-// 1.21.1	2024-11-21T23:58:51.937592	Test Mod/Block Loot Tables
+// 1.21.1	2024-11-22T16:40:12.095591	Test Mod/Block Loot Tables
 e23615f99eaef70924c43058097e9391d5c2048e data/testmod/loot_table/blocks/deepslate_grass.json
 c461af33ca70128bddcd4c2fd9eba2a8bccfae44 data/testmod/loot_table/blocks/pink_garnet_block.json
 81f7ef8e00f00da9e179bf5375dd278a2007e772 data/testmod/loot_table/blocks/raw_pink_garnet_block.json
 ff7590126ede9ddfc81ec8871a83730bf815a1d8 data/testmod/loot_table/blocks/magic_block.json
+f3664a04d113805b93848e82077fd01606f001ad data/testmod/loot_table/blocks/deep_wood.json
 ef53f8869a43759bdf0b55f3b4329f260c3b55b2 data/testmod/loot_table/blocks/pink_garnet_door.json
-a6652d3e88721f481ef930ac0ba37264f4be635a data/testmod/loot_table/blocks/deepslate_wood.json
+62d855216eb00085095f45133a70ff8277078cc9 data/testmod/loot_table/blocks/deep_sapling.json
+9d6ce2850388fb3a977a0747159cd7604f9a8fe4 data/testmod/loot_table/blocks/deep_log.json
 668fc3c08b71d2b115de1c6861393552b07fe3bd data/testmod/loot_table/blocks/pink_garnet_ore.json
 12efc73f96a616cda082e278b6512e432cf38a46 data/testmod/loot_table/blocks/grasin.json
 4314730d1d26daf32f4db752c0c3c5852147ef12 data/testmod/loot_table/blocks/pink_garnet_button.json
-ad2de50dafac58da135387fe3a8bcce7ed41354e data/testmod/loot_table/blocks/deepslate_log.json
-4456bcd42ef325a6e70df2a4f8f1c09178af23ef data/testmod/loot_table/blocks/pink_garnet_trapdoor.json
 581d749010eedb540d1e1a61fac257a619cb5bf6 data/testmod/loot_table/blocks/deepslate_pink_garnet_ore.json
+4456bcd42ef325a6e70df2a4f8f1c09178af23ef data/testmod/loot_table/blocks/pink_garnet_trapdoor.json
 6adaa88ee1e08d8aea24c21c3ced9597b9dba08f data/testmod/loot_table/blocks/pink_garnet_pressure_plate.json

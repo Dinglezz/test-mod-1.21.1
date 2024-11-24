@@ -69,12 +69,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xbf1b26)
+                        .waterColor(0x1051ad)
                         .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColor(0x7f03fc)
-                        .foliageColor(0xd203fc)
-                        .fogColor(0xd203fc)
+                        .skyColor(0x050505)
+                        .grassColor(0x408ada)
+                        .foliageColor(0x408ada)
+                        .fogColor(0x050505)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }

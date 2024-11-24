@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_log": {
+    "has_deep_log": {
       "conditions": {
         "items": [
           {
-            "items": "testmod:deepslate_log"
+            "items": "testmod:deep_log"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testmod:deepslate_wood"
+        "recipe": "testmod:deep_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_log"
+      "has_deep_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:deepslate_wood"
+      "testmod:deep_wood"
     ]
   }
 }

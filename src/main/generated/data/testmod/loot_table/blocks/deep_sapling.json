@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "testmod:deepslate_log"
+          "name": "testmod:deep_sapling"
         }
       ],
       "rolls": 1.0

@@ -9,15 +9,23 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunk.TrunkPlacerType;
+import net.minecraft.world.gen.trunk.UpwardsBranchingTrunkPlacer;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registryKey("pink_garnet_ore");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPWOOD_KEY = registryKey("deepwood");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_TREE_KEY = registryKey("deepwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -29,9 +37,14 @@ public class ModConfiguredFeatures {
 
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 12));
 
-        //register(context, DEEPWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-         //       BlockStateProvider.of(ModBlocks.)
-      //  ));
+        register(context, DEEP_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.DEEP_LOG),
+                new StraightTrunkPlacer(5, 4, 3),
+
+                BlockStateProvider.of(ModBlocks.GRASIN),
+                new SpruceFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), ConstantIntProvider.create(2)),
+
+                new TwoLayersFeatureSize(3, 1, 3)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {
