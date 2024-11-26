@@ -1,5 +1,6 @@
 package net.dinglezz.testmod.block;
 
+import net.dinglezz.testmod.block.custom.DeepBerryBush;
 import net.dinglezz.testmod.block.custom.DeepSapling;
 import net.dinglezz.testmod.block.custom.MagicBlock;
 import net.dinglezz.testmod.block.custom.PinkGarnetLampBlock;
@@ -59,17 +60,24 @@ public class ModBlocks {
             new GrassBlock(AbstractBlock.Settings.create().strength(3.0F, 6.0F)
                     .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block GRASIN = registerBlock("grasin",
-            new Block(AbstractBlock.Settings.create().strength(2.0F, 5.0F).sounds(BlockSoundGroup.WART_BLOCK).requiresTool()));
+            new Block(AbstractBlock.Settings.create().strength(2.0F, 5.0F).sounds(BlockSoundGroup.WART_BLOCK).requiresTool().nonOpaque()));
+
     public static final Block DEEP_SAPLING = registerBlock("deep_sapling",
         new DeepSapling(ModSaplingGenerators.DEEP, AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
                 .pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.NYLIUM).nonOpaque()));
+    public static final Block DEEP_BERRY_BUSH = registerBlockWithoutBlockItem("deep_berry_bush",
+            new DeepBerryBush(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block DEEP_LOG = registerBlock("deep_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LOG).strength(4f)));
     public static final Block DEEP_WOOD = registerBlock("deep_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_WOOD).strength(4f)));
 
-    //public static final Block
+    // Functions
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(TestMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

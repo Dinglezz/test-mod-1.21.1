@@ -1,6 +1,7 @@
 package net.dinglezz.testmod.item;
 
 import net.dinglezz.testmod.TestMod;
+import net.dinglezz.testmod.block.ModBlocks;
 import net.dinglezz.testmod.item.custom.ChiselItem;
 import net.dinglezz.testmod.item.custom.HammerItem;
 import net.dinglezz.testmod.item.custom.ModArmorItem;
@@ -86,6 +87,10 @@ public class ModItems {
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
+
+    //Deep
+    public static final Item DEEP_BERRIES = registerItem("deep_berries",
+            new AliasedBlockItem(ModBlocks.DEEP_BERRY_BUSH, new Item.Settings().food())) // NOTE!!!! 1.21.3 alias block item is a setting!!!!!
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);
